@@ -1,37 +1,197 @@
-*{
+* {
     margin: 0px;
-    padding:0px
+    padding: 0px;
+    font-family: "Gupter", serif;
 }
-.home{
- 
+
+.home {
+    position: relative;
 }
-.homeimage{
+
+.homeimage {
     position: absolute;
-    width:100%;
+    width: 100%;
     height: 100vh;
 }
-.homecontent{
-    margin-top: 15%;
+
+.homecontent {
+    margin-top: 8%;
     position: absolute;
     color: white;
     display: grid;
-    place-items: center;  /* Centers both horizontally and vertically */
-    width: 100%;       /* Full height of the viewport */
+    place-items: center; 
+    width: 100%; 
     text-align: center;
-    
 }
 
-.nav{
+.nav {
     margin-top: 30px;
     width: 100%;
     height: 60px;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 }
-.logo{
+
+.logo {
     height: 100px;
+    padding-right: 200px;
     padding-bottom: 50px;
 }
-.package-container{
-    position: static;
+.centered-div{
+    top: 30px;
+    margin-bottom: 80px;
 }
+
+.centered-div h1{
+    font-size: 80px;
+}
+
+#caption{
+    font-size: 50px;
+    font-family: "Great Vibes", cursive;
+}
+
+.package-container {
+    position: relative;
+    margin-top: 100vh; /* Pushes the package container below the full height of the home image */
+    /* Optional padding */
+    background-color: white; /* Background color to differentiate sections */
+}
+.packagehead{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.card {
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  }
+.card-img-top {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover;
+}
+.btn{
+    align-items: center;
+    text-align: center;
+}
+.btn:hover{
+    background-color: red;
+}
+
+
+
+#footer {
+    background-color: #333; /* Footer background color */
+    color: #ffffff; /* Text color */
+    padding: 20px 0; /* Top and bottom padding */
+  }
+  
+  .footerhead h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+  
+  .address {
+    font-size: 0.9rem;
+  }
+  
+  .icons {
+    font-size: 1.5rem;
+  }
+  
+  .icons i {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .flogo {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  @media (max-width: 576px) {
+    .icons i {
+      margin: 0 5px;
+    }
+  }
+  
+.image {
+    position: relative;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 16rem;
+    display: block;
+  }
+  
+  .details {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 12px;
+    background: rgba(53, 208, 219, 0.722); 
+    color: rgb(13, 13, 13);
+    padding-top: 50%;
+    text-align: center;
+    display: none;
+  }
+  
+  .details h5, .details p, .details button {
+    margin: 5px 0;
+  }
+
+  .border-secondary:hover .details{
+    display: block;
+  }
+  /* .bgcolor{
+    margin: 30px;
+    width: 75%;
+    height: 50%;
+    border-radius: 50px;
+    position: absolute;
+    background-color: bisque;
+  }
+  .pimg{
+    width: 200px;
+    margin: 20px;
+    position: absolute;
+  } */
+
+  .reviewhead h2{
+    font-family: "Great Vibes", cursive;
+  }
+  .review{
+    text-align: center;
+    
+  }
+  body {
+    
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+
+
+  .grid:hover {
+    animation: shake 0.8s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
